@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  padding: 15rem;
+  justify-content: center;
+}
+
+.toDo-container {
+  width: 33.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 1.1rem;
+  overflow: hidden;
+}
+
+.toDo-top {
+  height: 2.8rem;
+  background-color: #ffdc40;
+  margin-bottom: 1.6rem;
+}
+
+.toDo-title {
+  font-weight: 900;
+  font-size: 2.6rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1.8rem;
+}
+
+.sortIcon-box {
+  width: 100%;
+  text-align: right;
+  padding-right: 3.2rem;
+}
+
+.sort-icon {
+  cursor: pointer;
+}
+
+.sort-icon rect,
+.sort-icon path {
+  transition: all 0.3s ease;
+}
+
+.sort-icon:hover rect,
+.sort-icon:hover path {
+  fill: #000;
+}
+
+.sort-icon:active {
+  transform: scale(0.98);
+}
+
+.toDo-form {
+  padding: 1.2rem 2.8rem 1.8rem;
+}
+
+.list-container {
+  padding: 1rem 3rem;
+  border: 1px solid #ced4da;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  margin-bottom: 1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-input {
+  color: #000;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.delete {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-svg,
+.delete-svg rect,
+.delete-svg path {
+  cursor: pointer;
+  transition: fill, stroke 0.3s ease;
+  fill: #fff;
+}
+
+.delete-svg:hover rect,
+.delete-svg:hover path {
+  fill: #833ae0;
+  stroke: #fff;
+}
+
+.delete-svg:active {
+  transform: scale(0.7);
+}
+
+.addBtn-box {
+  text-align: center;
+}
+
+.add-btn {
+  margin: 0 auto;
+  width: 15rem;
+  height: 4.2rem;
+  overflow: hidden;
+  border: none;
+  border-radius: 3rem;
+  background-color: #833ae0;
+
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.add-btn:hover {
+  background-color: #7133c3;
+}
+
+.add-btn:hover .plus-icon {
+  background-color: #8646d3;
+}
+
+.add-btn:active,
+.add-btn:active .plus-icon {
+  transform: scale(0.98);
+}
+
+.plus-icon {
+  width: 4.2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9953f1;
+  border-radius: 50%;
+
+  transition: background-color 0.3s ease;
+}
+
+.addBtn-text {
+  padding-right: 2.4rem;
+  letter-spacing: 0.08rem;
+}
